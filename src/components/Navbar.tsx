@@ -23,7 +23,7 @@ const Navbar = () => {
             <span className="font-semibold text-foreground text-[21px]">MB</span>
             <span className="inline-block w-px h-3 bg-foreground/20 mx-[7px] align-middle" />
             <span className="font-light text-foreground/75 tracking-[5px] text-[19px]">
-              europ<span className="text-foreground/45 tracking-[4px]">parts</span>
+              euro<span className="text-foreground/45 tracking-[4px]">parts</span>
             </span>
           </div>
           <div className="text-[7px] font-medium tracking-[5px] uppercase text-primary pl-px">
