@@ -8,22 +8,22 @@ const Hero = () => {
         src={heroImg}
         alt="Mercedes-Benz S-Class 2026"
         className="absolute inset-0 w-full h-full object-cover origin-center"
-        style={{ animation: "kenBurns 12s ease-in-out infinite alternate" }}
-      />
+        style={{ animation: "kenBurns 12s ease-in-out infinite alternate" }} />
+
 
       {/* Overlay */}
       <div
         className="absolute inset-0"
-        style={{ background: "var(--gradient-hero)" }}
-      />
+        style={{ background: "var(--gradient-hero)" }} />
+
 
       {/* Hero content */}
       <div
         className="relative z-10 text-left pl-8 md:pl-[72px] pb-[100px] w-full"
-        style={{ animation: "heroReveal 1.6s cubic-bezier(.16,1,.3,1) .4s both" }}
-      >
+        style={{ animation: "heroReveal 1.6s cubic-bezier(.16,1,.3,1) .4s both" }}>
+
         <div className="text-[10px] font-medium tracking-[7px] uppercase text-foreground/45 mb-3.5">
-          MBeuropparts — S-Class W223
+          MBeuroparts — S-Class W223
         </div>
         <div className="w-8 h-px bg-primary mb-5" />
         <h1 className="text-[clamp(28px,3.5vw,48px)] font-light tracking-[2px] text-foreground/90 mb-2.5 leading-[1.15]">
@@ -46,8 +46,8 @@ const Hero = () => {
       {/* Luxury corner badge */}
       <div
         className="absolute z-10 top-[108px] right-8 md:right-14 flex flex-col items-end gap-2 pt-4"
-        style={{ animation: "heroReveal 1.8s cubic-bezier(.16,1,.3,1) .7s both" }}
-      >
+        style={{ animation: "heroReveal 1.8s cubic-bezier(.16,1,.3,1) .7s both" }}>
+
         <div className="absolute top-0 right-0 w-14 h-px bg-gradient-to-l from-foreground/25 to-transparent" />
         <span className="text-[8px] font-semibold tracking-[10px] uppercase text-foreground/28">Luxury</span>
         <div className="w-1 h-1 bg-primary rotate-45 opacity-70" />
@@ -59,11 +59,11 @@ const Hero = () => {
         Scroll
         <div
           className="w-px h-9 bg-gradient-to-b from-primary to-transparent"
-          style={{ animation: "scrollPulse 2s ease-in-out infinite" }}
-        />
+          style={{ animation: "scrollPulse 2s ease-in-out infinite" }} />
+
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Hero;
