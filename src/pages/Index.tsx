@@ -4,7 +4,7 @@ import LogoSection from "@/components/LogoSection";
 import Gallery from "@/components/Gallery";
 import Categories from "@/components/Categories";
 import HeadlightBanner from "@/components/HeadlightBanner";
-import Products from "@/components/Products";
+import SteeringWheelsShop from "@/components/SteeringWheelsShop";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -16,7 +16,7 @@ const Index = () => {
       <Gallery />
       <Categories />
       <HeadlightBanner />
-      <Products />
+      <SteeringWheelsShop />
       <Footer />
     </div>
   );
