@@ -22,7 +22,7 @@ const Hero = () => {
         className="relative z-10 text-left pl-8 md:pl-[72px] pb-[100px] w-full"
         style={{ animation: "heroReveal 1.6s cubic-bezier(.16,1,.3,1) .4s both" }}>
 
-        <div className="text-[10px] font-medium tracking-[7px] uppercase text-foreground/45 mb-3.5">
+        <div className="text-[10px] font-medium tracking-[7px] uppercase text-foreground/45 mb-3.5 text-cyan-500 border-neutral-50">
           MBeuroparts — S-Class W223
         </div>
         <div className="w-8 h-px bg-primary mb-5" />
@@ -44,15 +44,15 @@ Mercedes-Benz
       </div>
 
       {/* Luxury corner badge */}
-      <div
-        className="absolute z-10 top-[108px] right-8 md:right-14 flex flex-col items-end gap-2 pt-4"
-        style={{ animation: "heroReveal 1.8s cubic-bezier(.16,1,.3,1) .7s both" }}>
+      
 
-        <div className="absolute top-0 right-0 w-14 h-px bg-gradient-to-l from-foreground/25 to-transparent" />
-        <span className="text-[8px] font-semibold tracking-[10px] uppercase text-foreground/28">Luxury</span>
-        <div className="w-1 h-1 bg-primary rotate-45 opacity-70" />
-        <span className="text-[11px] font-light tracking-[5px] uppercase text-foreground/50">W223 · 2026</span>
-      </div>
+
+
+
+
+
+
+
 
       {/* Scroll indicator */}
       <div className="absolute bottom-9 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 text-muted-foreground text-[9px] tracking-[4px] uppercase">
