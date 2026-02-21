@@ -22,7 +22,7 @@ const Hero = () => {
         className="relative z-10 text-left pl-8 md:pl-[72px] pb-[100px] w-full"
         style={{ animation: "heroReveal 1.6s cubic-bezier(.16,1,.3,1) .4s both" }}>
 
-        <div className="text-[10px] font-medium tracking-[7px] uppercase text-foreground/45 mb-3.5 text-cyan-500 border-neutral-50">
+        <div className="text-[10px] font-medium tracking-[7px] uppercase mb-3.5 text-cyan-500 border-neutral-50 text-sky-400">
           MBeuroparts — S-Class W223
         </div>
         <div className="w-8 h-px bg-primary mb-5" />
