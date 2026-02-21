@@ -27,7 +27,7 @@ const Navbar = () => {
             </span>
           </div>
           <div className="text-[7px] font-medium tracking-[5px] uppercase text-primary pl-px">
-            Genuine · S‑Class · 2026
+            powered by performance  
           </div>
         </div>
       </a>
