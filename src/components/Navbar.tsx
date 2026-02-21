@@ -26,7 +26,7 @@ const Navbar = () => {
               euro<span className="text-foreground/45 tracking-[4px]">parts</span>
             </span>
           </div>
-          <div className="text-[7px] font-medium tracking-[5px] uppercase text-primary pl-px">
+          <div className="text-[7px] font-medium tracking-[5px] uppercase text-primary pl-px rounded-sm shadow-sm border-2 bg-gray-950 px-[3px]">
             powered by performance  
           </div>
         </div>
