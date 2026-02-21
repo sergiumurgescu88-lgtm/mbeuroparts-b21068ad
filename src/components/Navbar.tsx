@@ -23,11 +23,11 @@ const Navbar = () => {
             <span className="font-semibold text-foreground text-[21px]">MB</span>
             <span className="inline-block w-px h-3 bg-foreground/20 mx-[7px] align-middle" />
             <span className="font-light text-foreground/75 tracking-[5px] text-[19px]">
-              europ<span className="text-foreground/45 tracking-[4px]">parts</span>
+              euro<span className="text-foreground/45 tracking-[4px]">parts</span>
             </span>
           </div>
           <div className="text-[7px] font-medium tracking-[5px] uppercase text-primary pl-px">
-            power by performance  
+            Genuine · S‑Class · 2026
           </div>
         </div>
       </a>
@@ -38,8 +38,8 @@ const Navbar = () => {
         <a href="#products" className="text-[13px] font-medium tracking-[1.5px] uppercase text-muted-foreground hover:text-foreground transition-colors no-underline">Shop</a>
         <button
           onClick={() => setCartCount((c) => Math.min(9, c + 1))}
-          className="flex items-center gap-2 text-[13px] font-medium tracking-[1.5px] uppercase text-muted-foreground hover:text-foreground transition-colors bg-transparent border-none cursor-pointer">
-
+          className="flex items-center gap-2 text-[13px] font-medium tracking-[1.5px] uppercase text-muted-foreground hover:text-foreground transition-colors bg-transparent border-none cursor-pointer"
+        >
           <ShoppingBag className="w-[18px] h-[18px]" />
           Cart
           <span className="bg-primary text-primary-foreground text-[10px] font-bold min-w-[18px] h-[18px] rounded-full flex items-center justify-center px-1">
@@ -54,14 +54,14 @@ const Navbar = () => {
       </button>
 
       {/* Mobile menu */}
-      {mobileOpen &&
-      <div className="absolute top-[68px] left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-border p-6 flex flex-col gap-4 md:hidden">
+      {mobileOpen && (
+        <div className="absolute top-[68px] left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-border p-6 flex flex-col gap-4 md:hidden">
           <a href="#hero" className="text-sm font-medium tracking-widest uppercase text-muted-foreground hover:text-foreground no-underline" onClick={() => setMobileOpen(false)}>Home</a>
           <a href="#products" className="text-sm font-medium tracking-widest uppercase text-muted-foreground hover:text-foreground no-underline" onClick={() => setMobileOpen(false)}>Shop</a>
         </div>
-      }
-    </nav>);
-
+      )}
+    </nav>
+  );
 };
 
 export default Navbar;
