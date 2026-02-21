@@ -26,8 +26,8 @@ const Hero = () => {
           MBeuroparts — S-Class W223
         </div>
         <div className="w-8 h-px bg-primary mb-5" />
-        <h1 className="text-[clamp(28px,3.5vw,48px)] font-light tracking-[2px] text-foreground/90 mb-2.5 leading-[1.15]">Genuine Parts for
-Mercedes 
+        <h1 className="text-[clamp(28px,3.5vw,48px)] font-light tracking-[2px] text-foreground/90 mb-2.5 leading-[1.15]">Genuine Parts for 
+Mercedes-Benz
           <strong className="font-semibold text-foreground block">2026 S-Class</strong>
         </h1>
         <p className="text-[13px] font-normal tracking-[3px] uppercase text-foreground/38 mb-11">
