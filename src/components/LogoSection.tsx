@@ -8,8 +8,8 @@ const LogoSection = () => {
       {/* Background photos grid */}
       <div className="absolute inset-0 grid grid-cols-3 pointer-events-none z-0">
         <div className="bg-cover bg-center opacity-100 saturate-100 brightness-90" style={{ backgroundImage: `url(${mercedesRear})` }} />
+        <div className="bg-cover bg-center opacity-100 saturate-100 brightness-90" style={{ backgroundImage: `url(${mercedesNewSclass})` }} />
         <div className="bg-cover bg-center opacity-100 saturate-100 brightness-90" style={{ backgroundImage: `url(${mercedesFront})` }} />
-        <div className="bg-cover bg-center opacity-100 saturate-100 brightness-90" style={{ backgroundImage: `url(${mercedesSilver})` }} />
       </div>
 
       {/* Dark overlay */}
