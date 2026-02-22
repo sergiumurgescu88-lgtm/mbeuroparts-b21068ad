@@ -28,7 +28,7 @@ const Gallery = () => {
         <div className="bg-cover bg-center opacity-100 saturate-100 brightness-90" style={{ backgroundImage: `url(${mercedesSide})` }} />
         <div className="bg-cover bg-center opacity-100 saturate-100 brightness-90" style={{ backgroundImage: `url(${mercedesInterior})` }} />
       </div>
-      <div className="absolute inset-0 bg-[#06060f]/20 z-[1]" />
+      <div className="absolute inset-0 bg-[#06060f]/80 z-[1]" />
 
       <div className="relative z-10">
         {/* Header */}
