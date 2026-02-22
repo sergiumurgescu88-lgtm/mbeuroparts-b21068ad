@@ -37,11 +37,10 @@ const Categories = () => {
               className="absolute inset-0 bg-cover bg-center transition-transform duration-[550ms] ease-out group-hover:scale-105"
               style={{ backgroundImage: `url(${cat.image})` }}
             />
-            {/* Dark gradient - strong at bottom for text area only */}
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 via-[35%] to-transparent rounded-xl" />
+            {/* No overlay on image - text has its own solid background */}
 
-            {/* Info */}
-            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7 pb-4 md:pb-6">
+            {/* Info - solid background band at bottom */}
+            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7 pb-4 md:pb-6 bg-background/90">
               <div className="text-[9px] md:text-[10px] font-semibold tracking-[4px] uppercase text-cyan mb-1">
                 {cat.num}
               </div>
