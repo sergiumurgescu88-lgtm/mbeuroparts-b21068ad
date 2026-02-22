@@ -2,7 +2,7 @@ import heroImg from "@/assets/mercedes-side.jpg";
 
 const Hero = () => {
   return (
-    <section id="hero" className="relative w-full h-screen overflow-hidden flex items-end justify-start">
+    <section id="hero" className="relative w-full h-[100svh] overflow-hidden flex items-end justify-start">
       {/* Background image with Ken Burns */}
       <img
         src={heroImg}
@@ -19,14 +19,14 @@ const Hero = () => {
 
       {/* Hero content */}
       <div
-        className="relative z-10 text-left pl-8 md:pl-[72px] pb-[100px] w-full"
+        className="relative z-10 text-left px-5 md:pl-[72px] pb-16 md:pb-[100px] w-full"
         style={{ animation: "heroReveal 1.6s cubic-bezier(.16,1,.3,1) .4s both" }}>
 
         <div className="text-[10px] font-medium tracking-[7px] uppercase mb-3.5 text-cyan-500 border-neutral-50 text-sky-400">
           MBeuroparts — S-Class W223
         </div>
         <div className="w-8 h-px bg-primary mb-5" />
-        <h1 className="text-[clamp(28px,3.5vw,48px)] font-light tracking-[2px] text-foreground/90 mb-2.5 leading-[1.15]">Genuine Parts for
+        <h1 className="text-[clamp(24px,5vw,48px)] font-light tracking-[2px] text-foreground/90 mb-2.5 leading-[1.15]">Genuine Parts for
 Mercedes-Benz
           <strong className="font-semibold text-foreground block">2026 S-Class</strong>
         </h1>

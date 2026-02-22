@@ -2,7 +2,7 @@ import bannerImg from "@/assets/mercedes-headlight.jpg";
 
 const HeadlightBanner = () => {
   return (
-    <section className="relative h-[420px] overflow-hidden flex items-center">
+    <section className="relative h-[280px] md:h-[420px] overflow-hidden flex items-center">
       <img
         src={bannerImg}
         alt="Mercedes S-Class Digital Light"
@@ -13,7 +13,7 @@ const HeadlightBanner = () => {
         style={{ background: "var(--gradient-banner)" }}
       />
 
-      <div className="relative z-10 px-8 md:px-20">
+      <div className="relative z-10 px-5 md:px-20">
         <div className="text-[10px] font-semibold tracking-[6px] uppercase text-cyan mb-4">
           Digital Light Technology
         </div>
