@@ -1,6 +1,6 @@
 import mercedesRear from "@/assets/mercedes-rear.jpg";
+import mercedesNewSclass from "@/assets/mercedes-new-sclass.png";
 import mercedesFront from "@/assets/mercedes-front.jpg";
-import mercedesSilver from "@/assets/mercedes-silver.jpg";
 
 const LogoSection = () => {
   return (
