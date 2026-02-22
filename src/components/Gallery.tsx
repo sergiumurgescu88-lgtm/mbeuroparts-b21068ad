@@ -22,13 +22,13 @@ const Gallery = () => {
   }, []);
 
   return (
-    <section className="py-[100px] overflow-hidden relative" style={{ background: "#06060f" }}>
+    <section className="py-14 md:py-[100px] overflow-hidden relative" style={{ background: "#06060f" }}>
       {/* Background photos */}
       <div className="absolute inset-0 grid grid-cols-2 pointer-events-none z-0">
-        <div className="bg-cover bg-center opacity-80 saturate-[0.85] brightness-75" style={{ backgroundImage: `url(${mercedesSide})` }} />
-        <div className="bg-cover bg-center opacity-80 saturate-[0.85] brightness-75" style={{ backgroundImage: `url(${mercedesInterior})` }} />
+        <div className="bg-cover bg-center opacity-100 saturate-100 brightness-90" style={{ backgroundImage: `url(${mercedesSide})` }} />
+        <div className="bg-cover bg-center opacity-100 saturate-100 brightness-90" style={{ backgroundImage: `url(${mercedesInterior})` }} />
       </div>
-      <div className="absolute inset-0 bg-[#06060f]/90 z-[1]" />
+      <div className="absolute inset-0 bg-[#06060f]/20 z-[1]" />
 
       <div className="relative z-10">
         {/* Header */}
@@ -43,7 +43,7 @@ const Gallery = () => {
 
         {/* Slider */}
         <div className="relative max-w-[900px] mx-auto px-6">
-          <div className="relative h-[350px] md:h-[480px] rounded-xl overflow-hidden">
+          <div className="relative h-[240px] sm:h-[350px] md:h-[480px] rounded-xl overflow-hidden">
             {slides.map((slide, i) => (
               <div
                 key={i}
@@ -52,7 +52,7 @@ const Gallery = () => {
                 }`}
               >
                 <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent" />
 
                 {/* Badge */}
                 <span className="absolute top-5 right-5 text-[9px] font-semibold tracking-[3px] text-cyan border border-cyan/35 px-2.5 py-1 rounded-sm">

@@ -4,16 +4,16 @@ import mercedesSilver from "@/assets/mercedes-silver.jpg";
 
 const LogoSection = () => {
   return (
-    <section className="relative flex flex-col items-center py-[120px] px-12 overflow-hidden bg-background">
+    <section className="relative flex flex-col items-center py-16 md:py-[120px] px-6 md:px-12 overflow-hidden bg-background">
       {/* Background photos grid */}
       <div className="absolute inset-0 grid grid-cols-3 pointer-events-none z-0">
-        <div className="bg-cover bg-center opacity-80 saturate-[0.85] brightness-75" style={{ backgroundImage: `url(${mercedesRear})` }} />
-        <div className="bg-cover bg-center opacity-80 saturate-[0.85] brightness-75" style={{ backgroundImage: `url(${mercedesFront})` }} />
-        <div className="bg-cover bg-center opacity-80 saturate-[0.85] brightness-75" style={{ backgroundImage: `url(${mercedesSilver})` }} />
+        <div className="bg-cover bg-center opacity-100 saturate-100 brightness-90" style={{ backgroundImage: `url(${mercedesRear})` }} />
+        <div className="bg-cover bg-center opacity-100 saturate-100 brightness-90" style={{ backgroundImage: `url(${mercedesFront})` }} />
+        <div className="bg-cover bg-center opacity-100 saturate-100 brightness-90" style={{ backgroundImage: `url(${mercedesSilver})` }} />
       </div>
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-background/85 z-[1]" />
+      <div className="absolute inset-0 bg-background/20 z-[1]" />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center">

@@ -41,7 +41,7 @@ const SteeringWheelsShop = () => {
   const paginated = filtered.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
 
   return (
-    <section id="products" className="py-[100px] px-6 md:px-14" style={{ background: "var(--gradient-products)" }}>
+    <section id="products" className="py-14 md:py-[100px] px-4 md:px-14" style={{ background: "var(--gradient-products)" }}>
       {/* Header */}
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-[44px] font-bold tracking-tight mb-3 text-foreground">Steering Wheels</h2>
@@ -90,7 +90,7 @@ const SteeringWheelsShop = () => {
       </div>
 
       {/* Product Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 max-w-[1400px] mx-auto">
+      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2.5 md:gap-5 max-w-[1400px] mx-auto">
         {paginated.map((sw) => (
           <div
             key={sw.id}
@@ -98,7 +98,7 @@ const SteeringWheelsShop = () => {
             className="group rounded-xl overflow-hidden cursor-pointer border border-border transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_24px_60px_hsl(var(--primary)/0.18)] hover:border-primary/50"
             style={{ background: "hsl(var(--card-glass))" }}
           >
-            <div className="overflow-hidden h-[220px] bg-secondary/30 flex items-center justify-center">
+            <div className="overflow-hidden h-[140px] sm:h-[180px] md:h-[220px] bg-secondary/30 flex items-center justify-center">
               <img
                 src={sw.imageUrl}
                 alt={sw.name}
@@ -106,13 +106,13 @@ const SteeringWheelsShop = () => {
                 onError={(e) => { (e.target as HTMLImageElement).src = FALLBACK_IMG; }}
               />
             </div>
-            <div className="p-5 pb-6">
-              <p className="text-[10px] font-semibold tracking-[3px] uppercase text-primary mb-1.5">{sw.color}</p>
-              <h3 className="text-[15px] font-semibold text-foreground mb-1 line-clamp-1">{sw.name}</h3>
-              <p className="text-[11px] text-muted-foreground mb-1 font-mono">{sw.productNumber}</p>
-              <p className="text-[11px] text-muted-foreground mb-4">OEM: {sw.oemNumber} · {sw.weight}</p>
+            <div className="p-3 md:p-5 pb-4 md:pb-6">
+              <p className="text-[9px] md:text-[10px] font-semibold tracking-[3px] uppercase text-primary mb-1">{sw.color}</p>
+              <h3 className="text-[13px] md:text-[15px] font-semibold text-foreground mb-1 line-clamp-1">{sw.name}</h3>
+              <p className="text-[10px] md:text-[11px] text-muted-foreground mb-1 font-mono hidden sm:block">{sw.productNumber}</p>
+              <p className="text-[10px] md:text-[11px] text-muted-foreground mb-3 md:mb-4 hidden sm:block">OEM: {sw.oemNumber} · {sw.weight}</p>
               <div className="flex items-center justify-between">
-                <span className="text-xl font-bold text-foreground">€{sw.price.toFixed(2)}</span>
+                <span className="text-base md:text-xl font-bold text-foreground">€{sw.price.toFixed(2)}</span>
                 <span className="text-[10px] text-emerald-400 font-medium tracking-wide uppercase flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block" />
                   In Stock

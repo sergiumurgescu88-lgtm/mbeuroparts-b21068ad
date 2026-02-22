@@ -16,7 +16,7 @@ const categories = [
 
 const Categories = () => {
   return (
-    <section id="categories" className="py-[100px] px-6 md:px-14 bg-background">
+    <section id="categories" className="py-14 md:py-[100px] px-4 md:px-14 bg-background">
       <div className="text-center mb-14">
         <h2 className="text-4xl md:text-[44px] font-bold tracking-tight mb-3 text-foreground">
           Browse by Category
@@ -26,11 +26,11 @@ const Categories = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-[1400px] mx-auto">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3 max-w-[1400px] mx-auto">
         {categories.map((cat) => (
           <div
             key={cat.num}
-            className="group relative h-[300px] rounded-xl overflow-hidden cursor-pointer border border-transparent hover:border-primary/60 transition-all duration-350 hover:-translate-y-1.5 hover:shadow-[0_24px_60px_hsl(var(--primary)/0.2)]"
+            className="group relative h-[180px] sm:h-[240px] md:h-[300px] rounded-xl overflow-hidden cursor-pointer border border-transparent hover:border-primary/60 transition-all duration-350 hover:-translate-y-1.5 hover:shadow-[0_24px_60px_hsl(var(--primary)/0.2)]"
           >
             {/* Background */}
             <div
@@ -38,7 +38,7 @@ const Categories = () => {
               style={{ backgroundImage: `url(${cat.image})` }}
             />
             {/* Dark gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-background/92 via-background/25 to-transparent rounded-xl" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent rounded-xl" />
 
             {/* Info */}
             <div className="absolute bottom-0 left-0 right-0 p-7 pb-6">
