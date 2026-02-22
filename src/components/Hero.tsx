@@ -11,10 +11,10 @@ const Hero = () => {
         style={{ animation: "kenBurns 12s ease-in-out infinite alternate" }} />
 
 
-      {/* Overlay - only bottom portion for text readability */}
+      {/* Overlay */}
       <div
         className="absolute inset-0"
-        style={{ background: "linear-gradient(to top, hsl(230 50% 3% / 0.85) 0%, hsl(230 50% 3% / 0.5) 35%, transparent 60%)" }} />
+        style={{ background: "var(--gradient-hero)" }} />
 
 
       {/* Hero content */}
