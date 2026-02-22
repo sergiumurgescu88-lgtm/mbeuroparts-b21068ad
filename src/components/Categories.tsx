@@ -37,16 +37,16 @@ const Categories = () => {
               className="absolute inset-0 bg-cover bg-center transition-transform duration-[550ms] ease-out group-hover:scale-105"
               style={{ backgroundImage: `url(${cat.image})` }}
             />
-            {/* Dark gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent rounded-xl" />
+            {/* Dark gradient - strong at bottom for text area only */}
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 via-[35%] to-transparent rounded-xl" />
 
             {/* Info */}
-            <div className="absolute bottom-0 left-0 right-0 p-7 pb-6">
-              <div className="text-[10px] font-semibold tracking-[4px] uppercase text-cyan mb-1.5">
+            <div className="absolute bottom-0 left-0 right-0 p-4 md:p-7 pb-4 md:pb-6">
+              <div className="text-[9px] md:text-[10px] font-semibold tracking-[4px] uppercase text-cyan mb-1">
                 {cat.num}
               </div>
-              <div className="text-[22px] font-semibold text-foreground">{cat.name}</div>
-              <div className="h-0.5 bg-primary mt-2.5 w-0 group-hover:w-10 transition-all duration-400 ease-out" />
+              <div className="text-[15px] md:text-[22px] font-semibold text-foreground leading-tight">{cat.name}</div>
+              <div className="h-0.5 bg-primary mt-2 w-0 group-hover:w-10 transition-all duration-400 ease-out" />
             </div>
           </div>
         ))}
