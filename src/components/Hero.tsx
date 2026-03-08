@@ -7,63 +7,52 @@ const Hero = () => {
       <img
         src={heroImg}
         alt="Mercedes-Benz S-Class 2026"
-        className="absolute inset-0 w-full h-full object-cover origin-center"
-        style={{ animation: "kenBurns 12s ease-in-out infinite alternate" }} />
-
+        className="absolute inset-0 w-full h-full object-cover object-center"
+        style={{ animation: "kenBurns 12s ease-in-out infinite alternate" }}
+      />
 
       {/* Overlay */}
-      <div
-        className="absolute inset-0"
-        style={{ background: "var(--gradient-hero)" }} />
-
+      <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
 
       {/* Hero content */}
       <div
-        className="relative z-10 text-left px-5 md:pl-[72px] pb-16 md:pb-[100px] w-full"
-        style={{ animation: "heroReveal 1.6s cubic-bezier(.16,1,.3,1) .4s both" }}>
-
-        <div className="text-[10px] font-medium tracking-[7px] uppercase mb-3.5 text-cyan-500 border-neutral-50 text-sky-400">
+        className="relative z-10 text-left px-4 sm:px-6 md:pl-[72px] pb-20 sm:pb-16 md:pb-[100px] w-full max-w-2xl"
+        style={{ animation: "heroReveal 1.6s cubic-bezier(.16,1,.3,1) .4s both" }}
+      >
+        <div className="text-[9px] sm:text-[10px] font-medium tracking-[5px] sm:tracking-[7px] uppercase mb-3 text-sky-400">
           MBeuroparts — S-Class W223
         </div>
-        <div className="w-8 h-px bg-primary mb-5" />
-        <h1 className="text-[clamp(24px,5vw,48px)] font-light tracking-[2px] text-foreground/90 mb-2.5 leading-[1.15]">Genuine Parts for
-Mercedes-Benz
+        <div className="w-8 h-px bg-primary mb-4 sm:mb-5" />
+        <h1 className="text-[28px] sm:text-[36px] md:text-[48px] font-light tracking-[1px] sm:tracking-[2px] text-foreground/90 mb-2 leading-[1.15]">
+          Genuine Parts for Mercedes-Benz
           <strong className="font-semibold text-foreground block">2026 S-Class</strong>
         </h1>
-        <p className="text-[13px] font-normal tracking-[3px] uppercase text-foreground/38 mb-11">
+        <p className="text-[11px] sm:text-[13px] font-normal tracking-[2px] sm:tracking-[3px] uppercase text-foreground/38 mb-8 sm:mb-11">
           OEM precision · Factory warranty · Global shipping
         </p>
 
         {/* CTA Button */}
-        <a href="#products" className="group inline-flex items-center gap-[18px] text-foreground/75 text-[10px] font-medium tracking-[5px] uppercase no-underline hover:text-foreground transition-colors">
-          <span className="block w-10 h-px bg-foreground/35 group-hover:w-16 group-hover:bg-primary transition-all duration-500 ease-out relative">
+        <a
+          href="#products"
+          className="group inline-flex items-center gap-3 sm:gap-[18px] text-foreground/75 text-[10px] font-medium tracking-[4px] sm:tracking-[5px] uppercase no-underline hover:text-foreground transition-colors"
+        >
+          <span className="block w-8 sm:w-10 h-px bg-foreground/35 group-hover:w-14 sm:group-hover:w-16 group-hover:bg-primary transition-all duration-500 ease-out relative">
             <span className="absolute right-0 top-1/2 -translate-y-1/2 w-[3px] h-[3px] rounded-full bg-foreground/35 group-hover:bg-primary transition-colors" />
           </span>
           Explore Collection
         </a>
       </div>
 
-      {/* Luxury corner badge */}
-      
-
-
-
-
-
-
-
-
-
       {/* Scroll indicator */}
-      <div className="absolute bottom-9 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 text-muted-foreground text-[9px] tracking-[4px] uppercase">
+      <div className="absolute bottom-6 sm:bottom-9 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 text-muted-foreground text-[8px] sm:text-[9px] tracking-[4px] uppercase">
         Scroll
         <div
-          className="w-px h-9 bg-gradient-to-b from-primary to-transparent"
-          style={{ animation: "scrollPulse 2s ease-in-out infinite" }} />
-
+          className="w-px h-7 sm:h-9 bg-gradient-to-b from-primary to-transparent"
+          style={{ animation: "scrollPulse 2s ease-in-out infinite" }}
+        />
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default Hero;
